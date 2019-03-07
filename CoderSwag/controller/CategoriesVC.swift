@@ -1,0 +1,46 @@
+//
+//  ViewController.swift
+//  CoderSwag
+//
+//  Created by Admin on 3/7/19.
+//  Copyright © 2019 NanoSoft. All rights reserved.
+//
+
+import UIKit
+
+class CategoriesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
+  
+    
+    @IBOutlet weak var categoryTableView:UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        categoryTableView.dataSource=self
+        categoryTableView.delegate=self
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return DataServices.instance.getGategory().count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as?CatogeryCell {
+            let oneCategory=DataServices.instance.getGategory()[indexPath.row]
+            cell.getCell(category: oneCategory)
+         return cell
+        }
+        else
+        {
+            return CatogeryCell()
+        }
+        
+        
+    }
+    
+    
+    
+
+
+}
+
