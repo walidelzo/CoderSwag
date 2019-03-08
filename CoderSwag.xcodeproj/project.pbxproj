@@ -19,6 +19,7 @@
 		840CCFED22318DF4001F2A3D /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CCFEC22318DF4001F2A3D /* DataServices.swift */; };
 		840CCFEF2231A460001F2A3D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CCFEE2231A460001F2A3D /* Product.swift */; };
 		840CCFF12231B735001F2A3D /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CCFF02231B735001F2A3D /* ProductsViewController.swift */; };
+		840CCFF32232A194001F2A3D /* ProductsImageClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CCFF22232A194001F2A3D /* ProductsImageClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		840CCFEC22318DF4001F2A3D /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		840CCFEE2231A460001F2A3D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		840CCFF02231B735001F2A3D /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		840CCFF22232A194001F2A3D /* ProductsImageClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsImageClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				8409967C22312A0200B22856 /* CatogeryCell.swift */,
 				8409967E22314DAB00B22856 /* ProductCollectionViewCell.swift */,
+				840CCFF22232A194001F2A3D /* ProductsImageClass.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840CCFF32232A194001F2A3D /* ProductsImageClass.swift in Sources */,
 				8409967D22312A0200B22856 /* CatogeryCell.swift in Sources */,
 				840CCFEA22318B4C001F2A3D /* Category.swift in Sources */,
 				840CCFF12231B735001F2A3D /* ProductsViewController.swift in Sources */,

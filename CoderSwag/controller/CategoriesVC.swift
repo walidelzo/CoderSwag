@@ -49,8 +49,16 @@ class CategoriesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let products = segue.destination as? ProductsViewController{
+          
+            //hide the back button title
+            let barButton = UIBarButtonItem()
+            barButton.title = ""
+            navigationItem.backBarButtonItem = barButton
+            
+            
             assert(((sender as? Category) != nil))
             products.initProducts(category: sender as! Category)
+           
         }
         
         

@@ -31,7 +31,7 @@ class DataServices {
     Product(title: "Nano Soft T shirt red", price: "$23", imageName: "shirt02.png"),
     Product(title: "NanoSoft T shirt black", price: "$50", imageName: "shirt03.png"),
     Product(title: "NanoSoft t Shirt white", price: "$34", imageName: "shirt04.png"),
-    Product(title: "NanoSoft T Shirt  with gloden logo", price: "$100", imageName: "hate05.png")
+    Product(title: "NanoSoft T Shirt  with gloden logo", price: "$100", imageName: "shirt05.png")
     ]
     
     private let hoodies = [
