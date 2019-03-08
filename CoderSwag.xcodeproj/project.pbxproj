@@ -18,6 +18,7 @@
 		840CCFEA22318B4C001F2A3D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CCFE922318B4C001F2A3D /* Category.swift */; };
 		840CCFED22318DF4001F2A3D /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CCFEC22318DF4001F2A3D /* DataServices.swift */; };
 		840CCFEF2231A460001F2A3D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CCFEE2231A460001F2A3D /* Product.swift */; };
+		840CCFF12231B735001F2A3D /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CCFF02231B735001F2A3D /* ProductsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		840CCFE922318B4C001F2A3D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		840CCFEC22318DF4001F2A3D /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		840CCFEE2231A460001F2A3D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		840CCFF02231B735001F2A3D /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				8409965B22311FEA00B22856 /* CategoriesVC.swift */,
+				840CCFF02231B735001F2A3D /* ProductsViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			files = (
 				8409967D22312A0200B22856 /* CatogeryCell.swift in Sources */,
 				840CCFEA22318B4C001F2A3D /* Category.swift in Sources */,
+				840CCFF12231B735001F2A3D /* ProductsViewController.swift in Sources */,
 				8409965C22311FEA00B22856 /* CategoriesVC.swift in Sources */,
 				840CCFEF2231A460001F2A3D /* Product.swift in Sources */,
 				840CCFED22318DF4001F2A3D /* DataServices.swift in Sources */,

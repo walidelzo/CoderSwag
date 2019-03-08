@@ -19,6 +19,8 @@ class CategoriesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         categoryTableView.delegate=self
     }
     
+    //MARK: -  data source of category table
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataServices.instance.getGategory().count
     }
@@ -37,10 +39,23 @@ class CategoriesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         
     }
+    //MARK:- tableview selected and segue
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let oneCategory=DataServices.instance.getGategory()[indexPath.row]
+        performSegue(withIdentifier: "toProducts", sender:oneCategory)
+        
+    }
     
-    
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let products = segue.destination as? ProductsViewController{
+            assert(((sender as? Category) != nil))
+            products.initProducts(category: sender as! Category)
+        }
+        
+        
+        
+    }
 
 }
 
